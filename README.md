@@ -27,11 +27,16 @@ cd /usr/local/vtk/build
 ```
 - Now you are on the build folder inside the vtk, run the following command to configure
 ```
-ccmake /usr/local/vtk/src
+ccmake .
 ```
 - Now Select your prompt and configure by pressing `c`
 - Configure it twice
 - After that press `g` to generate
+- Now you have successfully generated the build file
+- Now run the following command to make(it would probably take half an hour)
+```
+make -j4
+```
 - You vtk is installed
 - trying running different examples from the link given below by following the instruction over their on the link
 ```
